@@ -6,6 +6,8 @@ In this opportunity I was recreate a random password generator using the startin
 Installation
 To access the webpage, please follow this link in a web browser: https://msabao.github.io/bootcamp2023-Challenge3/
 
+Link to repository: https://github.com/MSabaO/bootcamp2023-Challenge3
+
 ![Screenshot of password generator](image.png)
 
 Usage
