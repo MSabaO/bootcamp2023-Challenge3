@@ -8,6 +8,9 @@ var confirmUpper;
 var confirmNum;
 var confirmSpec;
 var userChoices;
+var passwordBlank;
+var password;
+var allChoices;
 
 // lower case letters
 var lowerCase = [
@@ -99,7 +102,7 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", generatePassword);
+generateBtn.addEventListener("click", writePassword);
 
 //Function
 function generatePassword() {
@@ -184,13 +187,12 @@ function generatePassword() {
 
   //random
   for (var i = 0; i < passwordLength; i++) {
-    var allChoices =
-      userChoices[Math.floor(Math.random() * userChoices.lenght)];
+    allChoices = userChoices[Math.floor(Math.random() * userChoices.length)];
     passwordBlank.push(allChoices);
     console.log(allChoices);
   }
 
-  var password = passwordBlank.join("");
+  password = passwordBlank.join("");
   console.log("Your password is: " + password);
   return password;
 }
